@@ -15,7 +15,7 @@ module tt_um_frq_divider(
     top frq_divider(
 
         .clk(uio_in[0]),
-        .reset_n(uio_in[5]),
+        .reset_n(ui_in[5]),
         .F_select(ui_in[4:0]),
         .clk_out(uio_in[1])
         
