@@ -16,6 +16,7 @@ f_select_ROM  ROM_inst (
 
 clk_divider clk_divider_inst (
     .clock_in(clk),
+	.rst(reset_n),
     .divisor_input(divider),
     .clock_out (clk_out)
 );
