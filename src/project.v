@@ -23,7 +23,7 @@ module tt_um_frq_divider(
 
   // All output pins must be assigned. If not used, assign to 0.
   assign uo_out [7:0] = 8'b00000000; // Example: ou_out is the sum of ui_in and uio_in
-    assign  uio_out [7:2] = 5'b00000;
+    assign  uio_out [7:2] = 5'd0;
     assign uio_oe [7:0] = 8'b00000010;
 
 endmodule
