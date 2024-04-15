@@ -15,16 +15,16 @@ module tt_um_frq_divider(
     top frq_divider(
 
         .clk(uio_in[0]),
-        .reset_n(uio_in[1]),
+        .reset_n(uio_in[5]),
         .F_select(ui_in[4:0]),
-        .clk_out(uio_in[2])
+        .clk_out(uio_in[1])
         
     );
 
   // All output pins must be assigned. If not used, assign to 0.
   assign uo_out [7:0] = 8'b00000000; // Example: ou_out is the sum of ui_in and uio_in
     assign  uio_out [7:3] = 4'b0000;
-    assign uio_oe [7:0] = 8'b00000100;
+    assign uio_oe [7:0] = 8'b00000010;
 
 endmodule
 
