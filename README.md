@@ -97,14 +97,11 @@ As for fabrication, the template provides us with 24 pins which are named as fol
 </p>
 The next table list the pins used acording with the package pins.
 
-| Pin Name   | Source Name | I/O    | Description                          | Purpose                                   | Parameters              |
-|------------|-------------|--------|--------------------------------------|-------------------------------------------|-------------------------|
-| in_out[0]  | clk         | Input  | Clock Signal                         | Synchronizes data and generates baud rate| 50MHz clock signal       |
-| in_out[1]  | reset_n     | Input  | Reset Signal                         | Returns system to initial state           | Active low              |
-| in_out[2]  | save_a_n    | Input  | Activate Transfer to Register A      | Initiates data transfer to Register A     | Active low              |
-| in_out[3]  | save_b_n    | Input  | Activate Transfer to Register B      | Initiates data transfer to Register B     | Active low              |
-| in_out[4]  | uart_tx_en  | Input  | Enable UART Transmitter              | Enables data transmission via UART        | Active HIGH             |
-| in_out[5]  | uart_txd    | Output | UART Data Transmitter                | Transmits data via UART                   | Baud rate: 9600         |
-| in_out[6]  | uart_busy   | Output | UART Indicational LED                | Indicates that data is being sent         | Active HIGH             |
-| in[3:0]    | Data_input  | Input  | 4-Bit Data Input                     | Input for operand data                    | Active HIGH             |
-| in[7:4]    | OP_select   | Input  | 4-Bit Operation Selector             | Selects operation to compute              | Active HIGH             |
+| Pin Name   | Source Name | I/O    | Description          | Purpose                              | Parameters              |
+|------------|-------------|--------|----------------------|--------------------------------------|-------------------------|
+| in_out[0]  | clk         | Input  | Clock Signal         | Synchronizes data                   | 50MHz clock signal      |
+| in[5]      | reset_n     | Input  | Reset Signal         | Returns the system to its initial state | Active HIGH             |
+| in[4:0]    | F_select    | Input  | Frequency Select     | Selects ROM address and divider parameters | Active HIGH             |
+| in_out[1]  | clk_out     | Output | Clock Signal         | Output of the divided clock signal  | Clock signal ranging from 25MHz to 1Hz |
+
+
