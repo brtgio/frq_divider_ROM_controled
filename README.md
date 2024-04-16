@@ -9,6 +9,9 @@
 This project is based on the necessity to have different clock frequencies for designing real-time clocks, using microprocessors, microcontrollers, or other devices.
 # Block diagram
 
+<p align="center">
+  <img src="block_diagram.svg" alt="Block Diagram">
+</p>
 
 
 ## Enable GitHub actions to build the results page
