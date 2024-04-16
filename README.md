@@ -76,19 +76,14 @@ In this simulation, a 25 MHz frequency was selected for demonstration purposes. 
 <p align="center">
   <img src="clk_divider_sim.PNG" alt="Block Diagram" width="1200">
 </p>
-## Resources
+As you can see mode modules work as spected.
+## Resources Employed
 
-- [FAQ](https://tinytapeout.com/faq/)
-- [Digital design lessons](https://tinytapeout.com/digital_design/)
-- [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
-- [Join the community](https://tinytapeout.com/discord)
-- [Build your design locally](https://docs.google.com/document/d/1aUUZ1jthRpg4QURIIyzlOaPWlmQzr-jBn3wZipVUPt4)
+- **OpenLane:** Used to automatically compile ASIC files.
+- **Verilog:** Hardware description language used to implement the design.
+- **Verilog Simulator:** Employed to verify the functionality of the design through simulations.
+- **Quartus Prime 18.1:** Employed to design and simulate the design.
+- **Terrasic DE10 LITE:** Employed to test core inside an FPGA.
 
-## What next?
-
-- [Submit your design to the next shuttle](https://app.tinytapeout.com/).
-- Edit [this README](README.md) and explain your design, how it works, and how to test it.
-- Share your project on your social network of choice:
-  - LinkedIn [#tinytapeout](https://www.linkedin.com/search/results/content/?keywords=%23tinytapeout) [@TinyTapeout](https://www.linkedin.com/company/100708654/)
-  - Mastodon [#tinytapeout](https://chaos.social/tags/tinytapeout) [@matthewvenn](https://chaos.social/@matthewvenn)
-  - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@matthewvenn](https://twitter.com/matthewvenn)
+## GDS and Tiny Tapeout layout
+The design was compiled under the Tiny Tapeout submission template for fabrication. As you can see at the top of this description, the design has passed all the GDS generation tests, so it's eligible for fabrication.
