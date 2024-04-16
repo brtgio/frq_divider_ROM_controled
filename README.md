@@ -17,13 +17,12 @@ As we can see in the block diagram this project is compose of two parts, one bei
 
 ## ROM
 This ROM contains the nesesaria parameters to select the frequency needed out of 27 frecuencies, the calculus of parameters is base on the next formula:
-\[ F_{clk_{out}} = \frac{F_{clk_{in}}}{\text{DIVISOR}} \]
 
 Where:
-- \( F_{clk_{in}} \) = Frequency of the input clock (in Hz)
-- \( F_{clk_{out}} \) = Frequency of the output clock (in Hz)
+- `F_{clk_{in}}` = Frequency of the input clock (in Hz)
+- `F_{clk_{out}}` = Frequency of the output clock (in Hz)
 - DIVISOR = Parameter value used to divide the input clock frequency
-## Enable GitHub actions to build the results page
+
 
 - [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
 
