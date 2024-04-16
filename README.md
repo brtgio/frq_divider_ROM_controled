@@ -74,7 +74,7 @@ For cases where the divisor isn't an exact multiple of 50 MHz (the typical clock
 ### Simulation
 In this simulation, a 25 MHz frequency was selected for demonstration purposes. As depicted in the accompanying image, if the divider is set to 2, the clock signal will be generated every 2 clock cycles with a 50% duty cycle. When the divider is reset, the clock signal will halt until the reset_n signal transitions LOW again.
 <p align="center">
-  <img src="block_diagram.svg" alt="Block Diagram" width="1200">
+  <img src="ROM_simulation.PNG" alt="Block Diagram" width="1200">
 </p>
 ## Resources
 
