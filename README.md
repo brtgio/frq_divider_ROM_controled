@@ -24,6 +24,7 @@ Where:
 - `DIVISOR` = Parameter value used to divide the input clock frequency
 This parameter is the one we have on our rom this well drive our counter when we need to divide the frequency.
 The next table enlist the parameters and frequencyies to be selected on the ROM:
+
 | Address | Divider | Frequency (Hz) | Period |
 | ------- | ------- | ---------------| ------ |
 | 0       | 50,000,000 | 1             | 20ns   |
