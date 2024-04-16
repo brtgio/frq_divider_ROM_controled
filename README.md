@@ -93,7 +93,7 @@ The design was compiled under the Tiny Tapeout submission template for fabricati
 
 As for fabrication, the template provides us with 24 pins which are named as follows:
 <p align="center">
-    <img src="chip_pinout.jpg" alt="chip pinout">
+    <img src="chip_pinout.png" alt="chip pinout">
 </p>
 
 The next table list the pins used acording with the package pins.
