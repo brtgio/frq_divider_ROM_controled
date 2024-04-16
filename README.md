@@ -88,3 +88,23 @@ As you can see mode modules work as spected.
 ## GDS and Tiny Tapeout layout
 The design was compiled under the Tiny Tapeout submission template for fabrication. As you can see at the top of this description, the design has passed all the GDS generation tests, so it's eligible for fabrication.
 ![Image](https://camo.githubusercontent.com/c7b68ed5c0b1eaa06477be01264d46b7f6386e21c29c784ae5e2b3492d13a959/68747470733a2f2f62727467696f2e6769746875622e696f2f6672715f646976696465725f524f4d5f636f6e74726f6c65642f6764735f72656e6465722e706e67)
+
+# Tiny Tapeout Chip Pins Layout
+
+As for fabrication, the template provides us with 24 pins which are named as follows:
+<p align="center">
+    <img src="chip_pinout.jpg" alt="chip pinout">
+</p>
+The next table list the pins used acording with the package pins.
+
+| Pin Name   | Source Name | I/O    | Description                          | Purpose                                   | Parameters              |
+|------------|-------------|--------|--------------------------------------|-------------------------------------------|-------------------------|
+| in_out[0]  | clk         | Input  | Clock Signal                         | Synchronizes data and generates baud rate| 50MHz clock signal       |
+| in_out[1]  | reset_n     | Input  | Reset Signal                         | Returns system to initial state           | Active low              |
+| in_out[2]  | save_a_n    | Input  | Activate Transfer to Register A      | Initiates data transfer to Register A     | Active low              |
+| in_out[3]  | save_b_n    | Input  | Activate Transfer to Register B      | Initiates data transfer to Register B     | Active low              |
+| in_out[4]  | uart_tx_en  | Input  | Enable UART Transmitter              | Enables data transmission via UART        | Active HIGH             |
+| in_out[5]  | uart_txd    | Output | UART Data Transmitter                | Transmits data via UART                   | Baud rate: 9600         |
+| in_out[6]  | uart_busy   | Output | UART Indicational LED                | Indicates that data is being sent         | Active HIGH             |
+| in[3:0]    | Data_input  | Input  | 4-Bit Data Input                     | Input for operand data                    | Active HIGH             |
+| in[7:4]    | OP_select   | Input  | 4-Bit Operation Selector             | Selects operation to compute              | Active HIGH             |
