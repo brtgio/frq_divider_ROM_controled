@@ -87,3 +87,4 @@ As you can see mode modules work as spected.
 
 ## GDS and Tiny Tapeout layout
 The design was compiled under the Tiny Tapeout submission template for fabrication. As you can see at the top of this description, the design has passed all the GDS generation tests, so it's eligible for fabrication.
+![Image](https://camo.githubusercontent.com/c7b68ed5c0b1eaa06477be01264d46b7f6386e21c29c784ae5e2b3492d13a959/68747470733a2f2f62727467696f2e6769746875622e696f2f6672715f646976696465725f524f4d5f636f6e74726f6c65642f6764735f72656e6465722e706e67)
