@@ -10,7 +10,7 @@ This project is based on the necessity to have different clock frequencies for d
 # Block diagram
 
 <p align="center">
-  <img src="block_diagram.svg" alt="Block Diagram">
+  <img src="block_diagram.svg" alt="Block Diagram" width="50%">
 </p>
 
 
