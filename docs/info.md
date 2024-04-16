@@ -9,12 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This is a clock divider. It works by dividing the frequency by a counter. The parameters for dividing were calculated for 27 frequencies, multiples of 50mHz. These parameters are stored in a ROM, which can be accessed by a 4-bit input, and it can output 28-bit data.
 
 ## How to test
 
-Explain how to use your project
+To function, it needs a 50MHz input. You select the frequency by choosing it from the table shown in the Readme.md. Then, you get the output through an output pin, which can be tested by an oscilloscope and fed into a microcontroller or any circuit requiring a square wave signal to function.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Requires a 50MHz oscillator.
+
+
+
+
