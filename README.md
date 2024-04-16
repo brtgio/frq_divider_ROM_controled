@@ -72,7 +72,10 @@ clk_divider, serves to divide an input clock signal (clock_in) by a specified di
 For cases where the divisor isn't an exact multiple of 50 MHz (the typical clock frequency), two flip-flops are utilized to synchronize the output clock (clock_out). The first flip-flop toggles when the counter value is less than half of the divisor, while the second flip-flop mirrors the first one to ensure synchronization. This setup ensures proper operation regardless of the input clock's frequency relationship with 50 MHz. However, if the divisor matches 50 MHz precisely, the input clock is directly passed to the output without any manipulation, streamlining the process for exact frequency multiples.
 
 ### Simulation
-In this simulation a 25mHz frequency was selected for demostration purposes
+In this simulation, a 25 MHz frequency was selected for demonstration purposes. As depicted in the accompanying image, if the divider is set to 2, the clock signal will be generated every 2 clock cycles with a 50% duty cycle. When the divider is reset, the clock signal will halt until the reset_n signal transitions LOW again.
+<p align="center">
+  <img src="block_diagram.svg" alt="Block Diagram" width="1200">
+</p>
 ## Resources
 
 - [FAQ](https://tinytapeout.com/faq/)
