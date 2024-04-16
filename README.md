@@ -93,10 +93,9 @@ The design was compiled under the Tiny Tapeout submission template for fabricati
 
 As for fabrication, the template provides us with 24 pins which are named as follows:
 <p align="center">
-    <img src="chip%20%pinout.jpg" alt="chip pinout">
+    <img src="chip%20pinout.jpg" alt="chip pinout">
 </p>
 The next table list the pins used acording with the package pins.
-
 | Pin Name   | Source Name | I/O    | Description          | Purpose                              | Parameters              |
 |------------|-------------|--------|----------------------|--------------------------------------|-------------------------|
 | in_out[0]  | clk         | Input  | Clock Signal         | Synchronizes data                   | 50MHz clock signal      |
