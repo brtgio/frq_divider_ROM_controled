@@ -58,6 +58,8 @@ The next table enlist the parameters and frequencyies to be selected on the ROM:
 
 The ROM is driven by a clock signal and four address select bits. When the reset signal, reset_n, is triggered, the ROM will return to address 0, causing the output to return to 0 until the next rising edge of the clock signal.
 
+### Simulation
+Simulation was done using intel quartus prime lite universal wave form
 ## Clock divider
 clk_divider, serves to divide an input clock signal (clock_in) by a specified divisor (divisor_input). Upon initialization or when a reset signal (reset_n) is activated, the internal counter (counter) and output clock (clock_out) are reset to zero. Subsequently, on each rising edge of clock_in, the counter increments until it reaches the divisor value minus one. If the divisor input changes, the divisor is updated, and the counter is reset.
 
