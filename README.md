@@ -13,7 +13,7 @@ This project is based on the necessity to have different clock frequencies for d
   <img src="block_diagram.svg" alt="Block Diagram" width="1200">
 </p>
 
-As we can see in the block diagram this project is compose of two parts, one being a ROM for frequency select, this ROM cointains the necesari parameters to divide the clock input. The second part is a counter to devide the input clk frequency.
+As we can see in the block diagram, this project is composed of two parts. One part is a ROM for frequency selection. This ROM contains the necessary parameters to divide the clock input. The second part is a counter to divide the input clock frequency.
 
 ## ROM
 This ROM contains the nesesaria parameters to select the frequency needed out of 27 frecuencies, the calculus of parameters is base on the next formula:
@@ -56,8 +56,12 @@ The next table enlist the parameters and frequencyies to be selected on the ROM:
 | 26      | 4          | 12,500,000    | 0.08us |
 | 27      | 2          | 25,000,000    | 0.04us |
 
+The ROM is driven by a clock signal and four address select bits. When the reset signal, reset_n, is triggered, the ROM will return to address 0, causing the output to return to 0 until the next rising edge of the clock signal.
 
+## Clock divider
+clk_divider, serves to divide an input clock signal (clock_in) by a specified divisor (divisor_input). Upon initialization or when a reset signal (reset_n) is activated, the internal counter (counter) and output clock (clock_out) are reset to zero. Subsequently, on each rising edge of clock_in, the counter increments until it reaches the divisor value minus one. If the divisor input changes, the divisor is updated, and the counter is reset.
 
+For cases where the divisor isn't an exact multiple of 50 MHz (the typical clock frequency), two flip-flops are utilized to synchronize the output clock (clock_out). The first flip-flop toggles when the counter value is less than half of the divisor, while the second flip-flop mirrors the first one to ensure synchronization. This setup ensures proper operation regardless of the input clock's frequency relationship with 50 MHz. However, if the divisor matches 50 MHz precisely, the input clock is directly passed to the output without any manipulation, streamlining the process for exact frequency multiples.
 
 ## Resources
 
